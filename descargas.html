@@ -2,12 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="keywords" content="ILUMINACION, INECCION TERMOPLASTICO, EXTERIOR, DECORACION, INTERIORISMO">
 <meta name="description" content="Fuinyter es una empresa que se dedica a la fabricación de luminarias para exterior, ademas ofrece el servicio de inyeccion para terceros.">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
     <title>Descargas</title>
+
+    <!-- Animaciones -->
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
 
 <!-- CSS -->
 
@@ -22,32 +30,38 @@
 <!-- Barra de menú -->
 
 <header>
-    <div class="container">   
+    <div class="container">  
+     <div class="wow animate__animated animate__fadeIn" data-wow-duration="3s">   
     <div class="logofloat-left">
     
     <a href="index.html" class="scrollto"><img src="imagenes/logo.png" class="img-fluid"></a>
     </div>      
     </div>
+    </div>
     
+    <a href="#nav" class="open"><img src="imagenes/menu.png"></a>
     <div class="menu">      
-        <nav>
-        <ul>
+        <nav id="nav">
+            <a href="index.html" class="scrollto"><img src="imagenes/logo.png" class="img-fluid1 wow animate__animated animate__fadeIn" data-wow-duration="2s"></a>
+            <a href="#" class="close"><img src="imagenes/close.png" ></a>
+        <ul class="menu-items">
         <li>
-        <a href="index.html">Home</a>
+        <a href="index.html" class="wow animate__animated animate__fadeIn" data-wow-duration="2s">Home</a>
     </li>
         <li>
-            <a href="empresa.html">Empresa</a>
+            <a href="empresa.html" class="wow animate__animated animate__fadeIn" data-wow-duration="2s">Empresa</a>
         </li>
       <li>
-          <a href="productos.html">Productos</a>
+          <a href="productos.html" class="wow animate__animated animate__fadeIn" data-wow-duration="2s">Productos</a>
       </li>
         <li>
-            <a href="descargas.html">Descargas</a>
+            <a href="descargas.html" class="wow animate__animated animate__fadeIn" data-wow-duration="2s">Descargas</a>
         </li>
        <li>
-           <a href="contacto.html">Contacto</a>
+           <a href="contacto.html" class="wow animate__animated animate__fadeIn" data-wow-duration="2s">Contacto</a>
        </li>
     </div>
+    <div class="wow animate__animated animate__fadeIn" data-wow-duration="2s">
     <div class="redes-container">
        <li>
            <a href="https://www.instagram.com/fuinyter.ar/" class="redes">
@@ -61,21 +75,25 @@
         </a>
     </li>
     </div>
+    </div>
     </ul>
     </nav>
     
     </header> 
     
     <!-- Termina la Barra de menú -->
+    
 
  
  <section>
+    <section class="wow animate__animated animate__fadeIn" data-wow-duration="4s">
     <img src="imagenes/fondo.png" class="fondo-secciones2">
     <h1 class="titulo-descarga">Descargas</h1>
-
+    </section>
 
 <!-- Descarga catálogo -->  
 
+<section class="wow animate__animated animate__fadeInUp" data-wow-duration="1s">
  <div class="catalogo">
  <h2>Catálogo productos</h2>
  <div class="boton-descarga">
@@ -83,10 +101,10 @@
     Descargar </a>
     </div>
 </div>
-
+</section>
 
 <!-- Descarga lista de precio -->
-
+<section class="wow animate__animated animate__fadeInUp" data-wow-duration="2s">
 <div class="listadeprecio">
 <h3>Lista de precios</h3>
 <p>*Acceso con clave</p>
@@ -95,7 +113,7 @@
 </form>
 </div>
 </section>
-
+</section>
 
 <!-- Footer -->
 
@@ -174,6 +192,9 @@ Montes de Oca 6493/87 (B1606 BMA)
 
 </div>
 </footer>
-
+<script src="js/wow.js"></script>
+<script>
+    new WOW().init();
+    </script>
 </body>
 </html>
