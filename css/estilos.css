@@ -16,7 +16,7 @@ h2 h3 {
     color: #00386D;
     text-transform: uppercase;
     font-size: 17px;
-    justify-content: center;
+    
 
 }
 
@@ -27,18 +27,31 @@ header{
     transition: all 0.5s;
     z-index: 997;
     transition: all 0.5s;
+    background: white;
     padding: 10px 0;
     box-shadow: 0px 0px 10px rgba(127, 137, 161, 0.3);
+}
+
+
+
+.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+   
 }
 
 .container {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+   margin: auto;
 }
  
+
+
+
 
 header .open,
 header .close,
@@ -136,18 +149,16 @@ nav{
 
 
 #items{
-    margin-top: 180px;
-    padding: 80px ;
+    padding: 60px 0 ;
     background: #00386D;
-    display: flex;
-    
-   
+    display: block;
+    margin-top: 90px;
 
 }
 
 h4{
     color:white;
-    
+    margin-bottom: .75rem;
     font-size: 22px;
     text-transform: uppercase;
     font-weight: bold;
@@ -156,91 +167,114 @@ h4{
 }
 
 
-#items .cont-text 
-{
-
-    font-size: 15px;
-    color: white;
-    margin-top: -20px;
-    text-align: center;
-    
-}
-
-#items .cont-text1 
-{
-
-    font-size: 15px;
-    color: white;
-    margin-top: -20px;
-    text-align: center;
-    
-}
 
 .contenedor-servicios{
-    display: flex;
-
+    display: block;
+width: 100%;
+margin-right: auto;
+margin-left: auto;
+padding-left: 15px;
+padding-right: 15px;
     
   
 }
-.design{
-    margin-left: -150px;
-    width: 270px;
-    margin-top: 60px;
-}
 
-.industry{
-    padding: 0;
-    width:  0px;
-    font-size: 50px;
-    margin-left: 290px;
-    margin-top: -21px;
+.col-lg-4,
+.mb-4{
+padding-left: 90px;
+padding-right: 20px;
 }
 
 
-.laptop{
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.mb-4,
+.my-4{
+    margin-bottom: 1.5rem;
+    padding-top: 10px;
+}
+
+element.style{
+    visibility: visible;
+    animation-name: bounceInUp;
+}
+
+#items .card{
+    background: #00386D;
+    border-color: #00386D;
+    border-radius: 10px;
+    margin: 0 15px;
+    padding: 15px 0;
+    text-align: center;
     color: white;
-    font-size: 50px;
-    margin-left: 270px;
-    margin-top: -20px;
+    transition: 0.3s ease-in-out;
+    height: 100%;
+
+
 }
 
-.inyec{
-margin-left: -120px;
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    border: 1px solid rgba(0,0,0,.125);
     width: 300px;
-    margin-top: 58px;
-
 }
 
-.light{
-    font-size: 50px;
-    margin-top: -22px;
-    margin-left: 20px;
 
-}
+.fa-industry,
+.fa-laptop {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    direction: ltr;
+    font-size: 68px;
+    padding-top: 15px;
+    margin-left:100px ;
 
-.ilum{
-    width: 270px;
-    margin-left: -150px;
-    margin-top: 57px;
-}
-
-.il-title{
-    margin-left: 57px;
-}
-
-.il-title-2{
-    margin-left: 5px;
 }
 
 .fa-lightbulb{
-    color: white;
-    width: 400px;
-    margin-top: -100px;
-    margin-left: 124px;
+    margin-left: 120px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    direction: ltr;
+    font-size: 68px;
+    padding-top: 15px;
+  
 }
 
-.fa-industry{
+.ilum,
+.inyec,
+.laptop{
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+#items .cont-text,
+.cont-text1{
+    font-size: 15px;
     color: white;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
 }
 
 
@@ -250,10 +284,12 @@ margin-left: -120px;
 .gallery-container{
     display: grid;
     grid-template-columns: repeat(5,1fr);
-   grid-gap: 12px;
-   margin-top: 100px;
-   margin-left: 130px;
+    margin-top: 140px;
+    width: 100%;
    
+   grid-gap: 12px;
+  padding-left: 132px;
+ 
 
 }
 
@@ -348,38 +384,36 @@ margin-left: -120px;
 /* nosotros */
 
 .texto-index{
-    padding-bottom: 6rem;
+    padding-bottom: 7rem;
 }
 
 .nosotros{
-margin-left: 645px;
-margin-top: -64px;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+margin-top: 10%;
 }
 
-.fondo-secciones3{
-    width: 390px;
-    margin-top: 80px;
-    margin-left: 490px;
-
-}
 
 
 .contenedor-index{
     width: 870px;
-   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
       
 }
 
 #factory{
-    padding: 0px;
-    margin-left: 130px;
-    margin-top: -30px;
+    padding-bottom: 2rem;
     margin-bottom: 100px;
+    
 }
 
 .cont-fac{
     width: 1150px;
     display: flex;
+    margin: auto;
+    padding-top: 5rem;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -404,24 +438,29 @@ margin-top: -64px;
 
 
 .contenedor-empresa{
-    width: 800px;
-    margin-left: 290px;
+    width: 790px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: justify;
-    margin-bottom: 90px;
-    margin-top: 20px;
+
+    
 }
 
 h1 {
     color: #00386D;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 22px;
-    display: flex;
+    font-size: 28px;
+    display: block;
+    font-weight: bold;
+    text-align: center;
 }
 
 .titulo-empresa{
-    margin-top: -60px;
-    margin-left: 650px;
+    margin-top: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -433,14 +472,6 @@ padding-top: 2rem;
 line-height: 25px;
 }
 
-
-.maquina{
-   width:340px ;
-   height:200px ;
-   margin-top: -20px; 
-   margin-left: 15px;
-
-}
 
 
 .subtitulo {
@@ -459,10 +490,13 @@ line-height: 25px;
 }
 
 .contenedor-empresa1{
-    width: 450px;
-    margin-left: 290px;
-    margin-top: -35px;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 3rem;
     text-align: justify;
+    margin-bottom: -90px;
 }
 
 /* FOOTER */
@@ -842,24 +876,29 @@ margin-left: -130px;
 }
 
 .prod-title{
-    margin-left: 635px;
-    margin-top: -64px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+    margin-top: 10%;
 }
 
 
 
 .grid-container-prod{
-    margin-left: 34px;
+    display: block;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 55px;
+    margin-right: auto;
+    margin-left: auto;
+    
 }
 
 
 /* SECCION DESCARGAS */
 
 
-.titulo-descarga{
-margin-left: 630px;
-margin-top: -65px;
-}
+
 
 .acceder{
     color: white;
@@ -885,7 +924,7 @@ margin-top: -65px;
     background-color: #00386D;
     width: 440px;
     height:140px ;
-    margin-left: 30rem;
+    margin: auto;
     margin-top: 90px;
     padding: 90px 0px 90px 0px;  
 }
@@ -902,7 +941,7 @@ margin-top: -65px;
     background-color: #00386D;
     width: 440px;
     height:150px;
-    margin-left: 30rem;
+    margin: auto;
     margin-top: 120px;
 margin-bottom: 90px;
 padding: 90px 0px 90px 0px;  
@@ -957,6 +996,15 @@ padding-top: 4px;
 
 
 
+.titulo-descarga{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 45px;
+    display: block;
+}
+
+
 /* SECCION CONTACTO */
 
 
@@ -968,23 +1016,24 @@ line-height: 25px;
 }
 
 .content{
+    
     max-width: 1170 px;
     margin-left: auto;
     margin-right: auto;
     padding: 1.5em;
     width: 550px;
+    
 }
 
 .seccion-contacto{
-    margin-top: -65px;
-    margin-left: 640px;
+   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12%;
 }
 
-.fondo-secciones2{
-    width: 390px;
-    margin-top: 60px;
-    margin-left: 490px;
-}
+
 
 form input,
 form textarea{
@@ -1023,12 +1072,6 @@ color: rgb(255, 255, 255);
 
  /* Fondo titulos */
 
- .fondo-secciones{
-     display: flex;
-width: 390px;
-margin-top: 60px;
-margin-left: 489px;
- }
 
 
  /* MOBILE */
@@ -1133,10 +1176,13 @@ header{
 
 .gallery-container{
     width: 90px;
-    margin-left: 22px;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 340px;
+    margin-right: auto;
     display: flex;
     grid-gap: 6px;
-    margin-top: 60px;
+    margin-top: 120px;
 }
 .gallery-item1{
     grid-row-start: none;
@@ -1220,102 +1266,170 @@ header{
 
 
 
+
 #items{
-    margin-top: 80px;
-    padding-top: 300px;
-    width: 415px;
-    height: 760px;
     
-}
+    background: #00386D;
+    margin-top: 90px;
+    width: 110%;
+    height: 200%;
 
-.il-title{
-    font-size: 17px;
-}
-
-
-#items .cont-text {
-    font-size: 14px;
-}
-
-.contenedor-servicios{
-    width: 100px;
-}
-
-.light{
-    font-size: 32px;
-    margin-top: -240px;
-    margin-left: -10px;
-    
-}
-
-.il-title{
-    margin-left: 80px;
-    margin-top: -80px;
-}
-.cont-text{
-    margin-left: 15px;
-}
-
-.ilum{
-    margin-top: -180px;
-
-
-}
-
-
-
-.industry{
-    margin-left: -150px;
-    font-size: 30px;
-    margin-top: -7px;
-}
-#items .cont-text1{
-    margin-left: -30px;
-    font-size: 12px;
-    width: 240px;
-}
-.laptop{
-    margin-left: -130px;
-    font-size: 30px;
-    margin-top: 260px;
-}
-.design{
-    margin-left: -253px;
-    margin-top: 320px;
 }
 
 h4{
-    font-size: 16px;
-    margin-left: 49px;
-}
-.inyec{
-    margin-left: -70px;
-    width: 200px;
-    margin-top: 90px;
+    color:white;
+    margin-bottom: .75rem;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    
 }
 
-.il-title-2{
-    font-size: 16px;
-    margin-left: -20px;
-    margin-top: -35px;
+
+
+
+
+
+
+.contenedor-servicios{
+
+width: 100%;
+padding: 20px;
+    
+  
 }
-.fondo-secciones3{
-    width: 290px;
-    margin-left: 52px;
+
+
+
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
+
+.mb-4,
+.my-4{
+    margin-bottom: 1.5rem;
+    padding-top: 10px;
+margin-left: -30px;
+}
+
+element.style{
+    visibility: visible;
+    animation-name: bounceInUp;
+}
+
+#items .card{
+
+    background: #00386D;
+    border-color: #00386D;
+    border-radius: 10px;
+    
+    text-align: center;
+    color: white;
+    transition: 0.3s ease-in-out;
+    height: 120%;
+    flex-direction: column;
+    
+
+
+}
+
+
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    border: 1px solid rgba(0,0,0,.125);
+    width: 300px;
+}
+
+
+.fa-industry,
+.fa-laptop {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    direction: ltr;
+    font-size: 68px;
+    padding-top: 15px;
+    margin-left:100px ;
+
+}
+
+
+
+.fa-lightbulb{
+    margin-left: 120px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    direction: ltr;
+    font-size: 68px;
+    padding-top: 15px;
+  
+}
+
+.ilum,
+.laptop{
+    flex: 1 1 auto;
+    padding: 2.25rem;
+}
+
+
+
+#items .cont-text,
+.cont-text1{
+    font-size: 15px;
+    color: white;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+
 
 .contenedor-index{
-    width: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 .nosotros{
     font-size: 20px;
-    margin-left: 154px;
-    margin-top: -51px;
+ display: block;
+    margin-top: 51px;
+    margin-left: auto;
+    margin-right: auto;
+  
 }
 
 .cont-fac{
     width: 200px;
     flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-left: 60px;
+
    
 }
 
@@ -1326,23 +1440,20 @@ h4{
 .fab-1{
     width: 300px;
     height: 280px;
-    margin-left: -73px;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .fab-2{
     width: 300px;
     height: 280px;
-margin-top: 70px;
-margin-left: -76px;
+    margin-top: 40px;
 }
 
 
 .fab-3{
     width: 300px;
     height: 280px; 
-    margin-top: 70px;
-    margin-left: -78px;
+    margin-top: 40px;
     flex-direction: column;
     
 }
@@ -1352,16 +1463,11 @@ margin-left: -76px;
  /* seccion empresa */
 
 
-
- .fondo-secciones{
-     width: 290px;
-     margin-left: 50px;
- }
-
  .titulo-empresa{
      font-size: 20px;
-     margin-left: 160px;
-     margin-top: -47px;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 130px;
  }
 
 .subtitulo{
@@ -1383,16 +1489,7 @@ margin-left: 58px;
     
  }
 
-.img-maq{
-    width: 20px;
-    margin-top: 320px;
-    margin-left: -305px;
-}
 
-.maquina{
-    width: 297px;
-    height: 160px;
-}
 
  p{
      font-size: 14px;
@@ -1472,25 +1569,28 @@ footer{
 
   /* seccion contacto */
 
-  .fondo-secciones2{
-
-  width: 290px;
-     margin-left: 50px;
-  }
 
   .seccion-contacto{
     font-size: 20px;
-    margin-left: 155px;
-    margin-top: -51px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 121px;
   }
 .contact-wrapper{
-     margin-left: 35px;
+    
     margin-top: 30px;
+    width: 110%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
 }
 
 .content{
     width: 80%;
-    margin-left: 27px;
+   
+    
 }
 
 
@@ -1500,13 +1600,16 @@ footer{
 
   .titulo-descarga{
       font-size: 20px;
-      margin-left: 145px;
-    margin-top: -51px;
+      display: block;
+margin-left: auto;
+      margin-right: auto;
+    margin-top: 140px;
   }
 
   .catalogo{
-      margin-top: 60px;
-      margin-left: 70px;
+      margin-top: auto;
+      margin-left: auto;
+      display: block;
       width: 270px;
       height: 180px;
       
@@ -1525,19 +1628,27 @@ font-size: 14px;
 
   .listadeprecio{
       margin-top: 70px;
-    margin-left: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     width: 270px;
     height: 180px; 
   }  
   
   
   /* seccion productos */
+
+
+
 .grid-container-prod{
     width: 50px;
     display: block;
-    margin-left: 43px;
-    margin-top: -40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
     margin-bottom: 70px;
+    padding-right:300px;
+    padding-left: 10px;
 }
 .prod-title{
     font-size: 16px;
@@ -1706,3 +1817,9 @@ font-size: 14px;
 }
 
 }
+
+
+
+
+
+ 
